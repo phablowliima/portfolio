@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema de Atendimento para Pizzarias</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-auto px-0">
+                <div class="sidebar">
+                    <div class="logo">
+                        <img src="../assets/images/logo-placeholder.png" alt="Logo Pizzaria" class="img-fluid" style="max-height: 60px;">
+                        <h5 class="mt-2">Pizzaria System</h5>
+                    </div>
+                    <ul class="nav flex-column mt-4">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                <i class="bi bi-speedometer2"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../atendimento/chatbot.html" class="nav-link">
+                                <i class="bi bi-chat-dots"></i>
+                                <span>Atendimento</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pedidos/kanban.html" class="nav-link">
+                                <i class="bi bi-kanban"></i>
+                                <span>Pedidos</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../clientes/clientes.html" class="nav-link">
+                                <i class="bi bi-people"></i>
+                                <span>Clientes</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../empresa/cardapio.html" class="nav-link">
+                                <i class="bi bi-journal-text"></i>
+                                <span>Cardápio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../empresa/promocoes.html" class="nav-link">
+                                <i class="bi bi-tag"></i>
+                                <span>Promoções</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../empresa/informacoes.html" class="nav-link">
+                                <i class="bi bi-building"></i>
+                                <span>Empresa</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../configuracoes/conta.html" class="nav-link">
+                                <i class="bi bi-gear"></i>
+                                <span>Configurações</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-5">
+                            <a href="#" class="nav-link" id="logoutBtn">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Sair</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="col main-content">
+                <div class="row mb-4">
+                    <div class="col">
+                        <h2 class="mb-0">Dashboard</h2>
+                        <p class="text-muted">Visão geral do seu negócio</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle me-1"></i>
+                                <span id="userName">Usuário</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="../configuracoes/conta.html">Minha Conta</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" id="logoutBtnDropdown">Sair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cards de Resumo -->
+                <div class="row mb-4">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="text-muted mb-1">Pedidos Hoje</h6>
+                                        <h3 class="mb-0" id="pedidosHoje">0</h3>
+                                    </div>
+                                    <div class="bg-primary bg-opacity-10 p-3 rounded">
+                                        <i class="bi bi-cart text-primary fs-3"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="badge bg-success">+12% <i class="bi bi-arrow-up"></i></span>
+                                    <span class="text-muted ms-2">desde ontem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="text-muted mb-1">Faturamento</h6>
+                                        <h3 class="mb-0" id="faturamentoHoje">R$ 0,00</h3>
+                                    </div>
+                                    <div class="bg-success bg-opacity-10 p-3 rounded">
+                                        <i class="bi bi-currency-dollar text-success fs-3"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="badge bg-success">+8% <i class="bi bi-arrow-up"></i></span>
+                                    <span class="text-muted ms-2">desde ontem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="text-muted mb-1">Clientes Novos</h6>
+                                        <h3 class="mb-0" id="clientesNovos">0</h3>
+                                    </div>
+                                    <div class="bg-info bg-opacity-10 p-3 rounded">
+                                        <i class="bi bi-people text-info fs-3"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="badge bg-success">+5% <i class="bi bi-arrow-up"></i></span>
+                                    <span class="text-muted ms-2">desde ontem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6 class="text-muted mb-1">Tempo Médio</h6>
+                                        <h3 class="mb-0" id="tempoMedio">0 min</h3>
+                                    </div>
+                                    <div class="bg-warning bg-opacity-10 p-3 rounded">
+                                        <i class="bi bi-clock text-warning fs-3"></i>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <span class="badge bg-danger">+2% <i class="bi bi-arrow-up"></i></span>
+                                    <span class="text-muted ms-2">desde ontem</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gráfico e Pedidos Recentes -->
+                <div class="row mb-4">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Desempenho de Vendas</h5>
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary active">Hoje</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Semana</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Mês</button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <canvas id="salesChart" height="250"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Pedidos Recentes</h5>
+                                <a href="../pedidos/kanban.html" class="btn btn-sm btn-outline-primary">Ver Todos</a>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="list-group list-group-flush" id="recentOrdersList">
+                                    <!-- Pedidos recentes serão inseridos aqui via JavaScript -->
+                                    <div class="list-group-item p-3">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1">Pedido #1234</h6>
+                                            <small class="text-muted">12:30</small>
+                                        </div>
+                                        <p class="mb-1">1x Pizza Calabresa, 1x Refrigerante</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">João Silva</small>
+                                            <span class="badge bg-warning">Em Preparo</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item p-3">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1">Pedido #1233</h6>
+                                            <small class="text-muted">12:15</small>
+                                        </div>
+                                        <p class="mb-1">1x Pizza Portuguesa, 2x Refrigerante</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">Maria Oliveira</small>
+                                            <span class="badge bg-success">Entregue</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item p-3">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h6 class="mb-1">Pedido #1232</h6>
+                                            <small class="text-muted">11:45</small>
+                                        </div>
+                                        <p class="mb-1">2x Pizza Margherita, 1x Refrigerante</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <small class="text-muted">Pedro Santos</small>
+                                            <span class="badge bg-danger">Cancelado</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produtos Populares e Clientes Ativos -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">Produtos Mais Vendidos</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Produto</th>
+                                                <th>Categoria</th>
+                                                <th>Vendas</th>
+                                                <th>Valor</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="popularProductsTable">
+                                            <!-- Produtos populares serão inseridos aqui via JavaScript -->
+                                            <tr>
+                                                <td>Pizza Calabresa</td>
+                                                <td>Pizzas</td>
+                                                <td>42</td>
+                                                <td>R$ 45,90</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pizza Portuguesa</td>
+                                                <td>Pizzas</td>
+                       
+(Content truncated due to size limit. Use line ranges to read in chunks)

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alemão Tattoo - Estúdio de Tatuagem</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- CSS3 -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="Imagens/Alemão Tattoo Logo 3.png" alt="Logo" class="d-inline-block align-text-top">
+                <span>Alemão Tattoo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quem-somos">Quem Somos Nós</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Logo central com fundo transparente -->
+    <div class="logo-container" id="inicio">
+        <img src="Imagens/Alemão Tattoo (1250 x 600 px).png" alt="Logo Ink Master Studio" class="logo-img">
+    </div>
+
+    <!-- Categorias -->
+    <section id="categorias">
+        <div class="container">
+            <h2 class="section-title">Categorias</h2>
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-6 col-sm-6">
+                    <div class="card bg-dark text-light">
+                        <img src="Imagens/7.png" class="card-img-top" alt="Tatuagens Old School">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Old School</h5>
+                            <p class="card-text">Estilo clássico com linhas fortes e cores vivas, inspirado na tradição marítima.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card bg-dark text-light">
+                        <img src="Imagens/5.png" class="card-img-top" alt="Tatuagens Realistas">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Realismo</h5>
+                            <p class="card-text">Tatuagens que parecem fotografias reais, com detalhes incríveis e técnicas avançadas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card bg-dark text-light">
+                        <img src="Imagens/8.png" class="card-img-top" alt="Tatuagens Minimalistas">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Minimalista</h5>
+                            <p class="card-text">Designs simples, elegantes e com poucas linhas, perfeitos para quem busca discrição.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card bg-dark text-light">
+                        <img src="Imagens/6.png" class="card-img-top" alt="Tatuagens Geométricas">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Geométrica</h5>
+                            <p class="card-text">Padrões e formas geométricas precisas que criam designs modernos e únicos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel de Eventos -->
+    <section id="eventos">
+        <div class="container">
+            <h2 class="section-title">Eventos</h2>
+            <div id="eventosCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Imagens/WORK SHOP 2(1250 x 600 px).png" class="d-block w-100" alt="Evento de Tatuagem 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagens/WORK SHOP 3(1250 x 600 px).png" class="d-block w-100" alt="Evento de Tatuagem 2">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagens/flash day tattoo.jpg" class="d-block w-100" alt="Evento de Tatuagem 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#eventosCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#eventosCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossos Artistas -->
+    <section id="artistas">
+        <div class="container">
+            <h2 class="section-title">Nossos Artistas</h2>
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-4 col-sm-6">
+                    <div class="card bg-dark text-light artist-card">
+                        <img src="Imagens/ChatGPT Image 15 de abr. de 2025, 14_34_53.png" class="card-img-top" alt="Artista 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Alemão</h5>
+                            <p class="card-text">Especialista em realismo e retratos, com 15 anos de experiência.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card bg-dark text-light artist-card">
+                        <img src="Imagens/H3.png" class="card-img-top" alt="Artista 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Maria Agulha</h5>
+                            <p class="card-text">Especializada em aquarela e desenhos minimalistas delicados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card bg-dark text-light artist-card">
+                        <img src="Imagens/R4.png" class="card-img-top" alt="Artista 3">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Rafael Carniceiro</h5>
+                            <p class="card-text">Mestre em old school e neo-tradicional, com prêmios internacionais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card bg-dark text-light artist-card">
+                        <img src="Imagens/L2.png" class="card-img-top" alt="Artista 4">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Juliana Linha Grossa</h5>
+                            <p class="card-text">Especialista em blackwork, pontilhismo e designs geométricos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informações -->
+    <section id="info-contato">
+        <div class="container">
+            <div class="row">
+                <!-- Contato -->
+                <div class="col-lg-3 col-md-6 col-sm-12" id="contato">
+                    <h3 class="text-center mb-4">Contato</h3>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fab fa-whatsapp social-icon"></i>
+                        <div>
+                            <h5 class="mb-0">WhatsApp</h5>
+                            <p class="mb-0">(85) 98561-3811</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="far fa-envelope social-icon"></i>
+                        <div>
+                            <h5 class="mb-0">Email</h5>
+                            <p class="mb-0">alemãotattoo@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fab fa-instagram social-icon"></i>
+                        <div>
+                            <h5 class="mb-0">Instagram</h5>
+                            <p class="mb-0">@alemãotattoo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quem Somos Nós / FAQ -->
+                <div class="col-lg-3 col-md-6 col-sm-12" id="quem-somos">
+                    <h3 class="text-center mb-4">Quem Somos Nós</h3>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item bg-dark text-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Nossa História
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Fundado em 2003 o Alemão Tattoo se tornou referência em arte corporal na cidade.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-dark text-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Biossegurança
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Utilizamos apenas materiais descartáveis e esterilizados, seguindo todas as normas da Anvisa.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-dark text-light">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    Primeira Tatuagem?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Não se preocupe! Temos uma equipe preparada para orientar iniciantes em cada etapa do processo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Endereço -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h3 class="text-center mb-4 mt-3">Endereço</h3>
+                    <div class="text-center">
+                        <i class="fas fa-map-marker-alt mb-3" style="font-size: 30px; color: #dc3545;"></i>
+                        <p>Av. Paulista, 1000<br>Bela Vista<br>São Paulo - SP<br>CEP: 01310-100</p>
+                        <a href="https://maps.app.goo.gl/RpZuDogeBzwLbz4X7" class="btn btn-outline-danger" target="_blank">Ver no Mapa</a>
+                    </div>
+                </div>
+                
+                <!-- Horário de Funcionamento -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h3 class="text-center mb-4 mt-3">Horário de Funcionamento</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-dark text-light border-danger">Segunda a Sexta: 10h às 20h</li>
+                        <li class="list-group-item bg-dark text-light border-danger">Sábado: 10h às 18h</li>
+                        <li class="list-group-item bg-dark text-light border-danger">Domingo: Fechado</li>
+                        <li class="list-group-item bg-dark text-light border-danger">Feriados: Consultar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>© 2025 Ink Master Studio. Todos os direitos reservados.</p>
+            <div class="mt-3">
+                <a href="#" class="text-light mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-light mx-2"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="text-light mx-2"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

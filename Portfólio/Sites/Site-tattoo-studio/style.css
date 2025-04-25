@@ -1,0 +1,196 @@
+ /* Estilos personalizados */
+ .navbar-nav .nav-link {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: 0 5px;
+}
+
+.navbar-custom {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.navbar-custom img {
+    max-height: 60px; /* aumenta a altura controlada da logo */
+    width: auto;      /* mantém a proporção original da imagem */
+}
+
+.navbar-custom .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1.5rem; /* Pode ajustar esse valor se quiser */
+}
+
+.navbar-custom .nav-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.9rem; /* Deixa os links menores */
+}
+
+.navbar-custom img {
+    height: 40px; /* Ajusta o tamanho do logo também */
+}
+
+.navbar-nav .nav-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card {
+    transition: transform 0.3s;
+    margin-bottom: 10px;
+}
+
+.card {
+    height: 60%; /* mantém altura flexível */
+    min-height: 400px; /* Aumenta a altura mínima */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ajusta o tamanho da imagem dentro do card */
+.card-img-top {
+    height: 250px; 
+    object-fit: cover;
+}
+
+/* Para telas grandes, aumentamos a largura dos cards */
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+/* Para telas médias (tablet), você pode aumentar também se quiser */
+@media (max-width: 991px) {
+    .card {
+        min-height: 400px;
+    }
+}
+
+/* Para celular, mantém a responsividade */
+@media (max-width: 576px) {
+    .card {
+        min-height: 380px;
+    }
+}
+
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+body {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+.section-title {
+    margin: 50px 0 30px;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #dc3545;
+    margin: 10px auto;
+}
+
+.navbar {
+    background-color: rgba(18, 18, 18, 0.9) !important;
+}
+
+footer {
+    background-color: #0a0a0a;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.logo-container {
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 992px) {
+    .logo-img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-img {
+        width: 100%;
+    }
+}
+
+
+.social-icon {
+    font-size: 22px;
+    margin-right: 15px;
+    color: #dc3545;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Responsividade para telas pequenas (celular) */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 150px; /* ou 200px, se quiser menor ainda */
+    }
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/* Estilos específicos para os cards de artistas */
+.artist-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-card .card-img-top {
+    height: 450px;       /* Ou o tamanho que preferir para a imagem */
+    width: 100%;         /* Ocupa toda a largura do card */
+    object-fit: cover;   /* Preenche o espaço, cortando só o excesso */
+    border-top-left-radius: 0.375rem;  /* mantém o visual padrão do Bootstrap */
+    border-top-right-radius: 0.375rem;
+    flex-shrink: 0;
+}
+
+/* Garante que as colunas dos artistas tenham a mesma altura */
+#artistas .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#artistas .col-lg-3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1); /* Deixa a seta branca */
+  }

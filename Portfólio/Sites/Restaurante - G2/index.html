@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurante Beira-Mar</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-sand-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Beira-Mar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cardapio">Cardápio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#espaco">Espaço</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="hero d-flex align-items-center justify-content-center text-center text-white">
+    <div class="hero__overlay"></div>
+    <div class="hero__content position-relative">
+      <h1 class="hero__title">Restaurante Beira-Mar</h1>
+      <h3 class="hero__subtitle mb-4">Sabores com vista para o mar</h3>
+      <a href="#reservas" class="btn btn-sand btn-lg">Reservar agora</a>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section id="cardapio" class="cardapio py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Nosso Cardápio</h2>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-md-4">
+          <div class="card shadow-sm">
+            <img src="imagens/cardapio/peixe-grelhado.png" class="card-img-top" alt="Prato 1">
+            <div class="card-body">
+              <h5 class="card-title">Peixe Grelhado</h5>
+              <p class="card-text">Acompanhado de legumes e arroz de coco.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-4">
+          <div class="card shadow-sm">
+            <img src="imagens/cardapio/moqueca-camarao.png" class="card-img-top" alt="Prato 1">
+            <div class="card-body">
+              <h5 class="card-title">Moqueca de Camarão</h5>
+              <p class="card-text">Acompanhado de arroz branco e farofa de nuts.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-4">
+          <div class="card shadow-sm">
+            <img src="imagens/cardapio/polvo-mediterraneo.png" class="card-img-top" alt="Prato 1">
+            <div class="card-body">
+              <h5 class="card-title">Polvo Mediterrâneo</h5>
+              <p class="card-text">Acompanhado de batatas aos murros e brócolis salteados.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+
+        <div class="col-12 col-md-4">
+          <div class="card shadow-sm">
+            <img src="imagens/cardapio/camarao-na-moranga.png" class="card-img-top" alt="Prato 1">
+            <div class="card-body">
+              <h5 class="card-title">Camarão na Moranga</h5>
+              <p class="card-text">Acompanhado de Farofa panko com e arroz branco.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-12 col-md-4">
+          <div class="card shadow-sm">
+            <img src="imagens/cardapio/filet-mignon.png" class="card-img-top" alt="Prato 1">
+            <div class="card-body">
+              <h5 class="card-title">Filet Mignon ao Molho Canário</h5>
+              <p class="card-text">Acompanhado de risoto de tomates.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-12 col-md-4">
+          <div class="card shadow-sm">
+            <img src="imagens/cardapio/familia-mar.png" class="card-img-top" alt="Prato 1">
+            <div class="card-body">
+              <h5 class="card-title">Família do mar</h5>
+              <p class="card-text">1,250kg de frutos do mar + 5 guarnições.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPAÇO -->
+  <section id="espaco" class="espaco py-5 position-relative">
+    <div class="container">
+      <h2 class="text-center text-white mb-5">Nosso Espaço</h2>
+      <div id="carouselEspaco" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagens/ChatGPT Image Apr 23, 2025, 06_33_31 PM.png" class="d-block w-100 rounded" alt="Espaço 1">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/ChatGPT Image Apr 23, 2025, 06_29_51 PM.png" class="d-block w-100 rounded" alt="Espaço 2">
+          </div>
+          <div class="carousel-item">
+            <img src="imagens/ChatGPT Image Apr 23, 2025, 06_33_32 PM.png" class="d-block w-100 rounded" alt="Espaço 3">
+          </div>
+        </div>   
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEspaco" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselEspaco" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section id="reservas" class="reservas py-5 bg-sand-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Reserve sua mesa conosco</h2>
+      <a href="#contato" class="btn btn-sand btn-lg">Reservar agora</a>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5">Fale Conosco</h2>
+      <form>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Nome" required>
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="col-md-6">
+            <input type="tel" class="form-control" placeholder="Telefone" required>
+          </div>
+          <div class="col-12">
+            <textarea class="form-control" rows="5" placeholder="Mensagem" required></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-success">Enviar via WhatsApp</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-sand-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Endereço</h5>
+          <p>Av. Praia Linda, 456 - Beira-mar</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Horários</h5>
+          <p>Seg a Dom: 11h - 22h</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Redes Sociais</h5>
+          <p>@restbeiramar</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

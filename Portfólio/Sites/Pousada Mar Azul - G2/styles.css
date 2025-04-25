@@ -1,0 +1,42 @@
+/* Geral */
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  img {
+    border-radius: 0.5rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('assets/praia-pôr-do-sol.jpg') no-repeat center center/cover;
+  }
+  
+  .hero__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero__content {
+    z-index: 1;
+  }
+  
+  /* Acomodações */
+  .acomodacoes__card {
+    border-radius: 0.5rem;
+  }
+  
+  /* Localização */
+  .localizacao {
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  /* Footer */
+  .footer h5 {
+    font-size: 1.2rem;
+  }
+  

@@ -1,0 +1,92 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #5D4037;
+}
+
+/* New Beach Sand Color Palette */
+:root {
+    --sand-dark: #C2B280;       /* Dark sand */
+    --sand-medium: #D6C6A5;     /* Medium sand */
+    --sand-light: #E6D7B9;      /* Light sand */
+    --wood-dark: #8D6E63;       /* Dark wood */
+    --wood-medium: #A1887F;     /* Medium wood */
+    --rope: #D4B996;            /* Rope color */
+    --white-sand: #F5F5DC;      /* White sand */
+    --ocean-blue: #607D8B;      /* Subtle ocean blue */
+}
+
+.btn-primary {
+    background-color: var(--wood-dark);
+    border-color: var(--wood-dark);
+}
+
+.btn-primary:hover {
+    background-color: var(--wood-medium);
+    border-color: var(--wood-medium);
+}
+
+.text-primary {
+    color: var(--wood-dark) !important;
+}
+
+.bg-primary {
+    background-color: var(--wood-dark) !important;
+}
+
+.btn-outline-primary {
+    color: var(--wood-dark);
+    border-color: var(--wood-dark);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--wood-dark);
+    border-color: var(--wood-dark);
+}
+
+/* HEADER/NAVBAR */
+.navbar {
+    background-color: var(--wood-dark);
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('imagens/ChatGPT_praia.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* ajuste de transparência para melhor leitura */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+footer {
+    background-color: var(--wood-dark);
+    color: white;
+    margin-top: 5rem;
+}
+

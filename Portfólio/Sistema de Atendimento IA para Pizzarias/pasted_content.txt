@@ -1,0 +1,123 @@
+Estrutura App - Arquitetura
+
+
+
+Visão geral
+O sistema será desenvolvido com uma arquitetura de micro serviços e solicitações de API RESTful. Servido através do n8n e outros serviços. Permitindo escalabilidade e manutenção independente de cada componente. Abaixo segue a estrutura da arquitetura do sistema.
+
+
+Front-end
+
+• Tecnologia:
+- HTML, CSS, Bootstrap, js, Node.js(para interações automáticas em tempo real).
+
+• Componentes Principais:
+    	- Painel Administrativo (Dashboard)
+	- Sistema de Autenticação (Pág de login)
+		• entrar.html
+		• entrar.js
+		• cadastrar.js
+		• cadastrar.html
+		• esquecisenha.html
+		• esquecisenha.js
+	- Gerenciador de Atendimento. (Chabot)
+		• Painel de atendimento de chatbot (html, node.js e javascript)
+	- Gerenciamento de Pedidos. (Kanban)
+		• Pedidos do dia (Kanban .js e .html)
+		• Relatório de Pedidos (Em .js e .html)
+	- Gerenciamento de Clientes. (CRM)
+		• Clientes Cadastrados
+		• Ação de Marketing (Espaço para promoções)
+	- Gerenciamento da Empresa
+		• Colaboradores
+			- Dados Pessoais
+			- CNH
+		• Informações Gerais (Empresa)
+			- Endereço
+			- Telefone
+			- Redes Sociais
+			- Landing Page
+			- Horário de Funcionamento
+			- Nome Fantasia
+			- CNPJ/MEI
+		• Gerenciamento de Cardápio
+			- Tabela de definição do Cardápio
+			- Ferramenta de mudança do cardápio
+		• Promoções
+			- Configuração para Promoções
+		• Informações de Entrega
+			- Informações gerais sobre a entrega
+	- Configurações da Conta
+		• Nome do usuário
+		• Senha
+		• Alterar Senha
+		• Nova Senha
+		• Plano (Informações do Plano)
+		• Alterar Logo
+	- Páginas Públicas (Landing Page de Cardápio e apresentação Pizzaria)
+		• Landing Page da Pizzaria
+		• Pág de Cardápio
+
+
+
+Back-end
+• Banco de dados (Postgresql)
+• API RESTful - n8n
+• Automações - n8n
+• API LLM - OpenAI
+• API Whatsapp WEB.js
+Diagrama de componentes
++----------------------------------+
+|           FRONTEND              |
+|  +----------------------------+  |
+|  |    Painel Administrativo   |  |
+|  +----------------------------+  |
+|  +----------------------------+  |
+|  |    Páginas Públicas        |  |
+|  +----------------------------+  |
++----------------------------------+
+              |
+              | API Calls
+              v
++----------------------------------+
+|           BACKEND               |
+|  +----------------------------+  |
+|  |      API RESTful           |  |
+|  +----------------------------+  |
+|  +----------------------------+  |
+|  |      N8N Workflows         |  |
+|  +----------------------------+  |
+|  +----------------------------+  |
+|  |      Serviços de IA        |  |
+|  +----------------------------+  |
++----------------------------------+
+              |
+              | Database Queries
+              v
++----------------------------------+
+|        BANCO DE DADOS           |
+|  +----------------------------+  |
+|  |      PostgreSQL            |  |
+|  +----------------------------+  |
++----------------------------------+
+              |
+              | External Integrations
+              v
++----------------------------------+
+|         INTEGRAÇÕES             |
+|  +----------------------------+  |
+|  |      WhatsApp     |  |
+|  +----------------------------+  |
+Segurança
+•Autenticação JWT (JSON Web Tokens)
+•Criptografia de dados sensíveis
+•HTTPS para todas as comunicações
+•Controle de acesso baseado em funções (RBAC)
+•Logs de auditoria para ações críticas
+•Proteção contra ataques comuns (XSS, CSRF, SQL Injection)
+Escalabilidade
+•Arquitetura de microserviços para escalar componentes independentemente
+•Cache de dados frequentemente acessados
+•Otimização de consultas ao banco de dados
+
+
